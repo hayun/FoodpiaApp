@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/detail_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/pick" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detail_title"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:text="제목나올곳" />
+
+        <TextView
+            android:id="@+id/detail_nickname"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:text="닉네임 나올곳" />
+
+        <TextView
+            android:id="@+id/detail_content"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:text="소개글 나올곳" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Signup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@drawable/signupback"
+                android:gravity="center"
+                android:onClick="chatting"
+                android:text="채팅하기" />
+
+            <ImageView
+                android:id="@+id/detail_like"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:src="@drawable/food_like"
+                android:onClick="likeFood"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

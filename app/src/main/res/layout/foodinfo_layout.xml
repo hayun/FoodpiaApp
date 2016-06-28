@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foodinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/info_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/help" />
+
+    <TextView
+        android:id="@+id/info_location"
+        style="@style/foodInfoFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/info_img"
+        android:text="먹거리 공유 장소" />
+
+    <TextView
+        android:id="@+id/info_nickname"
+        style="@style/foodInfoFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/info_img"
+        android:text="닉네임" />
+
+    <TextView
+        android:id="@+id/info_content"
+        style="@style/foodInfoFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/info_img"
+        android:text="음식 종류" />
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.foodpia.foodpiaapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <!-- 희재 부분 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+
+    <!-- 찬수 부분 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <activity android:name=".MainActivity">
+        </activity>
+
+
+        <!-- 희재 라인 -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".login.IntroActivity"
+            android:theme="@style/LoginTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- 네이버 아이디로 로그인에서 사용하는 액티비티를 등록 -->
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.nhn.android.naverlogin.ui.OAuthLoginInAppBrowserActivity"
+            android:label="OAuth2.0 In-app"
+            android:theme="@style/LoginTheme"/>
+
+        <activity android:name=".login.SignupActivity"
+            android:theme="@style/LoginTheme"/>
+        <activity android:name=".login.LoginActivity"
+            android:theme="@style/LoginTheme"/>
+        <activity android:name=".login.TestActivity"
+            android:theme="@style/LoginTheme"/>
+        <activity android:name=".login.RegistAdd_naver"
+            android:theme="@style/LoginTheme"/>
+        <activity android:name=".login.RegistAdd_facebook"
+            android:theme="@style/LoginTheme"/>
+
+        <!--                  찬수 라인                  -->
+        <activity android:name=".aroundlist.AroundActivity"/>
+        <activity android:name=".regist.RegistActivity"/>
+
+
+        <!--                  근호 라인                   -->
+        <activity android:name=".detail.Layout_detail_register"/>
+        <activity android:name=".detail.Layout_detail_user"/>
+        <activity android:name=".detail.DetailUpdate"/>
+
+    </application>
+
+</manifest>

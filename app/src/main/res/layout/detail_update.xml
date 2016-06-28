@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/update_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:src="@drawable/pick"
+        android:onClick="addUpdatePhoto"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/update_title"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:hint="제목나올곳" />
+
+        <EditText
+            android:id="@+id/update_nickname"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:hint="닉네임 나올곳" />
+
+        <EditText
+            android:id="@+id/update_content"
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/signupback"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:hint="소개글 나올곳" />
+
+        <Button
+            style="@style/Signup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/signupback"
+            android:gravity="center"
+            android:onClick="detail_update"
+            android:text="수정하기" />
+
+    </LinearLayout>
+</LinearLayout>

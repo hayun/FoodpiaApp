@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toggle"
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:background="@drawable/orange_out_line"
+    android:checkedButton="@+id/search"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/toggle_widget_background"
+        android:button="@null"
+        android:gravity="center"
+        android:text="검색"
+        android:textColor="#FFFFFF"
+        android:onClick="modeBtnClick"/>
+
+    <RadioButton
+        android:id="@+id/regist"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:background="@drawable/toggle_widget_background"
+        android:button="@null"
+        android:gravity="center"
+        android:text="등록"
+        android:textColor="#FFFFFF"
+        android:onClick="modeBtnClick"/>
+
+</RadioGroup>

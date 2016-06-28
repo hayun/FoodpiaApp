@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/around_txt_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="글쓴이"
+                android:textColor="#045bb9"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/aroundFmember_id"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="fmember_id"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/around_txt_dis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="25dp"
+            android:text="~276m"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/around_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/loading" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true">
+
+                <ImageView
+                    android:id="@+id/bt_like"
+                    android:layout_width="25dp"
+                    android:layout_height="17dp"
+                    android:layout_margin="5dp"
+                    android:alpha="30"
+                    android:src="@drawable/food_like" />
+
+                <TextView
+                    android:id="@+id/numberOfLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="2"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+
+                <ImageView
+                    android:id="@+id/bt_msg"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:alpha="30"
+                    android:src="@drawable/message" />
+
+                <ImageView
+                    android:id="@+id/bt_info"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="5dp"
+                    android:alpha="30"
+                    android:src="@drawable/detail" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:background="#bababa"></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/around_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="## title"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>
